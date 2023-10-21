@@ -14,7 +14,8 @@ const Bollywood = () => {
 
     useEffect(() => {
         // This is the API URL
-        const apiUrl = "http://localhost:2003/api/data";
+        // const apiUrl = "http://localhost:2003/api/data";
+        const apiUrl = "https://node-backend-project-x42k.onrender.com/api/data";
         // Fetch data from the API
         fetch(apiUrl)
             .then((response) => response.json())
