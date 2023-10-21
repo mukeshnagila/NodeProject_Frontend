@@ -1,0 +1,535 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+}
+.logoh4{
+    rotate: 90deg;
+    margin-right: 15px;
+}
+.logoh1{
+    font: normal normal bold 41px/57px Montserrat;
+}
+
+.links{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px 0px;
+}
+
+.Linkline{
+    text-decoration: none;
+}
+
+.img{
+    width: 90%;
+    height: 200px;
+    border-radius: 15px;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 51px;
+    padding-bottom: 0%;
+}
+
+.box1{
+    width: 65%;
+    /* background-color: blue; */
+}
+
+.box2{
+    width: 31%;
+    padding: 0% 2%;
+    /* background-color: blueviolet; */
+}
+
+.theh1{
+    font: normal normal medium 30px/30px Montserrat;
+    color: #000000;
+    border-bottom: 3px solid #F08080;
+    margin-left: 10px;
+    width: 12%;
+}
+
+.name{
+    font: normal normal medium 26px/35px Montserrat;
+    color: #000000;
+}
+
+.description{
+    font: normal normal normal 17px/23px Open Sans;
+    color: #908D8D;
+}
+
+.category{
+    font: normal normal medium 17px/20px Montserrat;
+    display: inline;
+    color: #404040;
+}
+
+.date{
+    font: normal normal medium 17px/23px Acumin Pro;
+    letter-spacing: 0.85px;
+    color: #404040;
+    opacity: 0.24;
+    display: inline;
+}
+
+.inlinediv{
+    display: flex;
+    padding: 20px 5px;
+}
+
+.forimg{
+    width: 50%;
+}
+
+.forcontent{
+    width: 50%;
+}
+
+.Topimg{
+    width: 98%;
+    height: 300px;
+    border-radius: 15px;
+}
+
+.Topname{
+    font: normal normal medium 16px/25px Montserrat;
+    color: #000000;
+    font-size: 20px
+}
+
+.TopContainer{
+    display: flex;
+}
+
+.TCpart1{
+    width: 70%;
+}
+
+.TCpart2{
+    width: 30%;
+}
+
+.TCpart2p{
+    color: #F0F0F0;
+    position: relative;
+    left: 60%;
+    top: 30%;
+    font-size: 76px;font: normal normal medium 74px/101px Fira Sans;
+}
+
+.smalltopblog{
+    display: flex;
+    padding: 5% 0%;
+}
+
+.smalltopimg{
+    width: 150px;
+    height: 100px;
+}
+
+.smalltoptext{
+    padding-left: 5%;
+}
+
+.smalltopname{
+    font-size: 12px;
+}
+
+.smalltopp{
+    color: #F0F0F0;
+    position: relative;
+    font-size: 76px;font: normal normal medium 74px/101px Fira Sans;
+}
+
+.foradvertisement{
+    padding: 10% 0%;
+}
+
+.advertisementP{
+    text-align: center;
+    border: 2px solid black;
+    width: 100%;
+    height: 550px;
+}
+.advertisementP2{
+    text-align: center;
+    border: 2px solid black;
+    width: 100%;
+    height: 800px;
+}
+
+
+.home{
+    padding-left: 5%;
+    padding-top: 2%;
+    padding-right: 5%;
+}
+
+.sliderimg{
+    height: 550px;
+    width: 100%;
+    border-radius: 25px;
+}
+.sliderimg2{
+    height: 273px;
+    width: 100%;
+    border-radius: 25px;
+}
+
+.homecontainer{
+    display: flex;
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 1%;
+}
+
+.Csliderimg1{
+    width: 70%;
+    border: 5px solid white;
+}
+.Csliderimg2{
+    width: 30%;
+    border: 5px solid white;
+}
+
+.Hcontainer2{
+    display: flex;
+    /* justify-content: space-evenly; */
+    column-gap: 5%;
+    flex-wrap: wrap;
+    padding: 2% 0px;
+    width: 100%;
+}
+
+.HCchildbox{
+    width: 30%;
+    text-align: center;
+}
+
+.latestIMG{
+    width: 100%;
+    height: 280px;
+    border-radius: 15px;
+}
+
+.navbaar{
+    box-shadow: 1px 5px 15px lightgray;
+    position: fixed;
+    background-color: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1; 
+}
+
+.startslider{
+    padding: 5% 0%;
+}
+
+.startsliderhome{
+    padding: 5% 0%;
+    display: none;
+}
+
+.slider{
+    width: 90%;
+    height: 600px;
+    padding: 2% 5%;
+}
+
+/* .sliderbtndiv{
+    padding: 0% 5%;
+}
+
+.btnslider1{
+    min-width: 80px;
+    background-color: aquamarine;
+    border: 2px solid black;
+    box-shadow: 2px 3px 5px gray;
+    border-radius: 5px;        
+}
+
+.btnslider2{
+    min-width: 80px;
+    background-color: aquamarine;
+    border: 2px solid black;
+    box-shadow: 2px 3px 5px gray;
+    border-radius: 5px;  
+    float: right;      
+} */
+
+.image-slider {
+    position: relative;
+  }
+  
+  .image-slider img {
+    max-width: 100%;
+    height: 500px;
+  }
+  
+  .slider-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 25px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .slider-arrow:hover {
+    background: rgba(0, 0, 0, 0.7);
+  }
+  
+  .prev {
+    left: 110px;
+  }
+  
+  .next {
+    right: 110px;
+  }
+
+  .linkunderline{
+    text-decoration: none;
+    color: #000000;
+  }
+
+
+
+/* /////////////////////////////////////////// media Querie /////////////////////////////////////////////// */
+
+
+@media only screen and (min-width: 200px) and (max-width:750px) {
+    .logo {
+        justify-content: start;
+    }
+    
+    .img{
+        width: 100%;
+    }
+    
+    .container{
+        display: block;
+        padding: 50px 10px;
+    }
+
+    .startslider{
+        padding: 0% 0%;
+    }
+    
+    .slider{
+        padding: 15% 5%;
+    }
+    
+    .box1{
+        width: 100%;
+    }
+    
+    .box2{
+        width: 97%;
+        padding: none;
+        overflow-x: hidden;
+    }
+    
+    .inlinediv{
+        display: block;
+    }
+    
+    .forimg{
+        width: 100%;
+    }
+    
+    .forcontent{
+        width: 100%;
+    }
+    
+    .smalltopimg{
+        height: 100px;
+    }
+    
+    .advertisementP{
+        height: 600px;
+    }
+
+    .slider{
+        height: 200px;
+    }
+
+    .prev {
+        left: 40px;
+    }
+      
+    .next {
+        right: 40px;
+    }
+
+    .HCchildbox{
+        width: 100%;
+        padding: 2% 0%;
+    }
+
+    .homecontainer{
+        display: none;
+    }
+    
+    .startsliderhome{
+        padding-bottom: 0%;
+        display: inline;
+    }
+
+    .image-slider{
+        padding-top: 0%;
+        margin-bottom: -50px;
+    }
+
+    .image-slider img{
+        height: 250px;
+    }
+
+
+/* ///////////////// For NavBar ////////////////// */
+    
+
+    .menu{
+        position: absolute;
+        top: 0.75rem;
+        right: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 2.25rem;
+        height: 2rem;
+        cursor: pointer;
+    }
+
+    .menu span {
+            height: 0.4rem;
+            width: 100%;
+            background-color: #66d3ccf0;
+            border-radius: 0.2rem;
+    }
+
+    .links{
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        margin: 0.2rem 0.5rem;
+        padding: 0%;
+        line-height: 23px;
+    }
+
+    .clickon:hover{
+        background-color: #a2b5f2;
+    }
+
+    #close{
+        display: none;
+    }
+
+    #close.open{
+        display: flex;
+    }
+
+
+    
+}
+
+
+/* /////////////////////////////////////////// media Querie For Tab /////////////////////////////////////////////// */
+
+
+@media only screen and (min-width: 751px) and (max-width:1200px) {
+
+    .img{
+        width: 100%;
+    }
+    
+    .container{
+        display: block;
+        padding: 50px 10px;
+    }
+
+    .startslider{
+        padding: 6% 0%;
+    }
+    
+    .slider{
+        padding: 15% 5%;
+    }
+    
+    .box1{
+        width: 100%;
+    }
+    
+    .box2{
+        width: 97%;
+        padding: none;
+        overflow-x: hidden;
+    }
+    
+    .inlinediv{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .forimg{
+        width: 50%;
+    }
+    
+    .forcontent{
+        width: 40%;
+    }
+    
+    .smalltopimg{
+        height: 100px;
+    }
+    
+    .advertisementP{
+        height: 600px;
+    }
+
+    .slider{
+        height: 200px;
+    }
+
+    .prev {
+        left: 40px;
+    }
+      
+    .next {
+        right: 40px;
+    }
+
+    .HCchildbox{
+        width: 100%;
+        padding: 5%;
+    }
+
+    .homecontainer{
+        display: none;
+    }
+    
+    .startsliderhome{
+        padding-bottom: 0%;
+        display: inline;
+    }
+
+    .image-slider{
+        margin-bottom: -100px;
+    }
+    
+}
