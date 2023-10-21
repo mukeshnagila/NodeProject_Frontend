@@ -30,7 +30,7 @@ const Home = () => {
 
     useEffect(() => {
         // const apiUrl = "http://localhost:2003/api/data";
-        const apiUrl = "https://node-backend-project-x42k.onrender.com";
+        const apiUrl = "https://node-backend-project-x42k.onrender.com/api/data";
         fetch(apiUrl)
             .then((response) => response.json())
             .then((data) => {
