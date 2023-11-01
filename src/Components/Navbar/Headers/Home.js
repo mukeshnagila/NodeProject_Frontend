@@ -1,12 +1,9 @@
-import React, { useContext, useEffect, useState } from "react";
-import { store } from "../../../ContextStore/ContextStore";
+import React, { useEffect, useState } from "react";
 import Slider from "../../../Slider/Slider";
 import { NavLink } from "react-router-dom";
 
 
 const Home = () => {
-    const [cdata] = useContext(store);
-    console.log(cdata);
 
     const [SliderImgData1, SetSliderImgData1] = useState([]);    
     const [SliderImgData2, SetSliderImgData2] = useState([]);    
@@ -16,6 +13,8 @@ const Home = () => {
     const [AllImgData2, SetAllImgData2] = useState([]);
     const [AllImgData3, SetAllImgData3] = useState([]);
     const [TopBollywoodMainData, SetTopBollywoodMainData] = useState([]);
+    const [HomeImg1Data, SetHomeImg1Data] = useState([]);
+    const [HomeImg2Data, SetHomeImg2Data] = useState([]);
 
     
     var num = 0;
@@ -57,6 +56,12 @@ const Home = () => {
 
                 const HomeTopBollywoodMain = data.filter((item) => item.category === "TopBollywoodMain");
                 SetTopBollywoodMainData(HomeTopBollywoodMain);
+
+                const HomeImg1Items = data.filter((item) => item.category === "HomeImg1");
+                SetHomeImg1Data(HomeImg1Items);
+
+                const HomeImg2Items = data.filter((item) => item.category === "HomeImg2");
+                SetHomeImg2Data(HomeImg2Items);
             })
             .catch((error) => {
                 console.error("Error fetching data:", error);
@@ -194,7 +199,7 @@ const Home = () => {
                                     })}
 
                                 <div className="foradvertisement">
-                                        {cdata.filter((item) => item.category === 'HomeImg1').map((item, index) => {
+                                        {HomeImg1Data.map((item, index) => {
                                             return(
                                                 <p className="advertisementP" key={index}>
                                                         <img className="advertisementP" src={item.image} alt="AddImg"></img>
@@ -229,7 +234,7 @@ const Home = () => {
 
 
                                 <div className="foradvertisement">
-                                        {cdata.filter((item) => item.category === 'HomeImg2').map((item, index) => {
+                                        {HomeImg2Data.map((item, index) => {
                                             return(
                                                 <p className="advertisementP" key={index}>
                                                         <img className="advertisementP" src={item.image} alt="AddImg"></img>
